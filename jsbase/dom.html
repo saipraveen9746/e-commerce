@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dom.js">
+    <title>Class</title>
+</head>
+<p id="demo"></p>
+<body>
+    <script>
+         class Car{
+             constructor(name,year){
+                this.name = name;
+                this.year = year;
+            }
+            age(){
+                const date = new Date();
+                return date.getFullYear() - this.year;
+
+            }
+
+        }
+
+
+         const myCar = new Car("BMW",2001);
+         document.getElementById("demo").innerHTML = "My car is "+ myCar.age()+ "years old.";
+
+
+
+     </script>
+     <script>
+        class Myclass {
+           constructor (name,age){
+                 this.name = name;
+                 this.age = age;
+            
+             }
+             sayhello (){
+                 console.log(`hello myname is ${this.name},and my age is ${this.age}`);
+             }
+         }
+
+     const personal = new Myclass("Praveen",22);
+     personal.sayhello();
+
+
+     </script>
+
+    <script>
+
+
+
+    </script>
+</body>
+</html>
